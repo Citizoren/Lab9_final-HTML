@@ -55,3 +55,20 @@ header a.badge {
 footer{
     background: #F3F3F3;
 }
+
+.figure-img{
+    border-radius: 3rem!important;
+}
+
+.lep1{
+    position: absolute;
+    transform: matrix(-1, 0.13, 0.13, 0.99, 0, 0);
+    right: 600px;
+    top: 350px;
+}
+
+.lep2{
+    position: absolute;
+    right: 300px;
+    top: 1000px;
+}
