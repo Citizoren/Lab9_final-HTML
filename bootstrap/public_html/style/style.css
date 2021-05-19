@@ -21,6 +21,10 @@ header a.badge {
     min-height: 100vh 
 }
 
+.fill-viewport-70 {
+    min-height: 70vh;
+}
+
 .main-1{
     background: url(../img/1.jpg) no-repeat #9A1212;
     padding-top: 5em;
@@ -69,6 +73,6 @@ footer{
 
 .lep2{
     position: absolute;
-    right: 300px;
-    top: 1000px;
+    right: 20px;
+    top: 1150px;
 }
