@@ -1,31 +1,464 @@
 body{
     display: flex;
-    font-family: 'Jost', sans-serif;
+    flex-direction: column;
     text-align: center;
 }
 
-.main-1{
+.new{
+    width: 70vw;
+    font-size: 7.5em;
     display: flex;
-    background: url(../img/1.jpg) no-repeat #9A1212;
+    justify-content: center;
+}
+
+.main-1{
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    background: url(../img/1.jpg) center no-repeat #9A1212;
+    background-size: contain;
+}
+
+.main-2{
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    width: 90vw;
+    flex-direction: column;
+}
+
+.carousel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+}
+
+.arrow{
+    color: #9A1212;
+}
+
+.figure-caption{
+    color: #9A1212!important;
+    font-size: 2.5em!important;
+}
+
+.footer{
+    display: flex;
+    background: #F3F3F3;
+    width: 100vw;
+    height: 10vh;
+}
+
+.address{
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.7em;
+    text-align: start;
+    padding-left: 0.5em;
+}
+
+.figure-img{
+    border-radius: 3rem!important;
 }
 
 .header{
+    height: 10vh;
     padding: 1em;
-    width: 100%;
-    height: 80px;
+    padding-right: 9em;
     display: flex;
-    background-color: #9A1212;
     justify-content: flex-end;
-    align-items: flex-start;
-    align-self: flex-end;
+    align-items: center;
 }
 
-.badge{
+.main .badge{
     font-size: 2em;
+    margin-top: 3em;
     text-decoration: none;
 }
 
 .header .badge {
     margin-right: 1em;
     font-size: 1.7em;
+    text-decoration: none;
+}
+
+.main-1 > .main{
+    height: 90vh;
+    justify-content: flex-end;
+    color: white;
+    text-align: end;
+    padding-right: 10em;
+    padding-top: 4em;
+}
+
+.text1{
+    font-size: 5em;
+}
+
+.text2{
+    font-size: 7.5em;
+}
+
+.text_about{
+    font-size: 2em;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.about{
+    width: 37vw;
+}
+
+.head-1{
+    width: 100vw;
+    height: 10vh;
+    background: #9A1212;
+}
+
+.dkp{
+    width: 100vw;
+    background: #F3F3F3;
+}
+
+.dkp-text{
+    width: 100vw;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    word-wrap: break-word;
+    overflow: hidden;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+@media all and (max-width: 1400px){
+    .new{
+        width: 100vw;
+    }
+    
+    .header{
+        height: 15vh;
+        padding: 1em;
+        padding-right: 3em;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .header .badge {
+        margin-right: 1em;
+        font-size: 1.7em;
+        text-decoration: none;
+    }
+
+    .main-1 > .main{
+        height: 90vh;
+        justify-content: flex-end;
+        color: white;
+        text-align: end;
+        padding-right: 4em;
+        padding-top: 4em;
+    }
+
+    .text1{
+        font-size: 4em;
+    }
+
+    .text2{
+        font-size: 6.5em;
+    }
+
+    .text_about{
+        font-size: 1.3em;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .about{
+        padding-top: 3vh;
+        width: 40vw;
+    }
+
+    .main .badge{
+        font-size: 1.5em;
+        margin-top: 2em;
+        text-decoration: none;
+    }
+
+    .figure{
+        width: 15vw;
+    }
+
+    .carousel{
+        width: 100vw;
+        justify-content: space-around;  
+    }
+}
+
+@media all and (max-width: 1000px){
+    .main-1{
+        background: url(../img/1_mobile.jpg) 50% 15% no-repeat #9A1212;
+        background-size: contain;
+    }
+
+    .new{
+        font-size: 5.5em;
+    }
+
+    .figure{
+        width: 20vw;
+    }
+
+    .figure-caption{
+        font-size: 2em!important;
+    }
+
+    .main-2{
+        width: 100vw;
+    }
+
+    .header{
+        height: 10vh;
+        padding: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .badge {
+        font-size: 1.7em;
+        text-decoration: none;
+    }
+
+    .main-1 > .main{
+        height: 200vh;
+        justify-content: center;
+        text-align: center;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .text1{
+        font-size: 4em;
+    }
+
+    .text2{
+        font-size: 7em;
+    }
+
+    .text_about{
+        font-size: 2em;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100vh;
+    }
+
+    .about{
+        width: 75vw;
+    }
+
+    .main .badge{
+        font-size: 2em;
+        margin-top: 1.5em;
+        text-decoration: none;
+    }
+
+    .main-1{
+        background-position: 50% 10%;
+    }
+}
+
+@media all and (max-width: 900px){
+    .flex-container{
+        padding-top: 75vh;
+    }
+
+    .figure-img{
+        border-radius: 1.5rem!important;
+    }
+
+    .new{
+        font-size: 5em;
+    }
+}
+
+@media all and (max-width: 800px){
+    .flex-container{
+        padding-top: 65vh;
+    }
+
+    .new{
+        font-size: 4.5em;
+    }
+
+    .carousel{
+        width: 100vw;
+        justify-content: space-around;  
+    }
+
+    .figure{
+        width: 20vw;
+    }
+
+    .figure-caption{
+        font-size: 1.5em!important;
+    }
+}
+
+@media all and (max-width: 700px){
+    .header{
+        height: 10vh;
+        padding: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .badge {
+        font-size: 1.3em;
+        text-decoration: none;
+    }
+
+    .main-1 > .main{
+        height: 100vh;
+        justify-content: center;
+        text-align: center;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .text1{
+        font-size: 4em;
+    }
+
+    .text2{
+        font-size: 6.5em;
+    }
+
+    .text_about{
+        font-size: 2em;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60vh;
+    }
+
+    .about{
+        width: 70vw;
+    }
+
+    .main .badge{
+        font-size: 2em;
+        margin-top: 1em;
+        text-decoration: none;
+    }
+
+    .new{
+        font-size: 5em;
+    }
+
+    .main-1{
+        background-position: 50% 10%;
+    }
+
+    .new{
+        font-size: 3em;
+    }
+
+    .figure{
+        width: 20vw;
+    }
+
+    .figure-caption{
+        font-size: 1.5em!important;
+    }
+}
+
+@media all and (max-width: 425px){
+    .main-1{
+        background-position: 50% 20%;
+    }
+
+    .new{
+        font-size: 3em;
+    }
+
+    .figure{
+        width: 25vw;
+    }
+
+    .figure-caption{
+        font-size: 1em!important;
+    }
+
+    .header{
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .badge {
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+
+    .main-1 > .main{
+        width: 100vw;
+        justify-content: flex-end;
+        text-align: center;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .text1{
+        font-size: 2.5em;
+    }
+
+    .text2{
+        font-size: 3.8em;
+    }
+
+    .text_about{
+        font-size: 1.2em;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 42vh;
+    }
+
+    .about{
+        width: 80vw;
+    }
+
+    .main .badge{
+        font-size: 2em;
+        margin-top: 1em;
+        text-decoration: none;
+    }
 }
