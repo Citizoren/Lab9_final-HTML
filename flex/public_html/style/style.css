@@ -147,10 +147,21 @@ body{
     color: white;
     font-size: 1.5em;
     display: flex;
-    word-wrap: break-word;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: clip;
     justify-content: space-around;
     flex-wrap: nowrap;
+}
+
+@media all and (max-width: 1400px) and (max-height: 1024px){
+    .lep2{
+        bottom: -71.5vh!important;
+    }
+
+    .address {
+        padding-left: 1em;
+    }
 }
 
 @media all and (max-width: 1400px){
