@@ -4,6 +4,20 @@ body{
     text-align: center;
 }
 
+.lep1{
+    position: absolute;
+    width: 30vw;
+    right: 25vw;
+    bottom: -3.5vw;
+}
+
+.lep2{
+    position: absolute;
+    width: 51.3vw;
+    bottom: -90.5vh;
+    right: 12vw;
+}
+
 .new{
     width: 70vw;
     font-size: 7.5em;
@@ -55,7 +69,7 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 1.7em;
+    font-size: 1.5em;
     text-align: start;
     padding-left: 0.5em;
 }
@@ -143,7 +157,7 @@ body{
     .new{
         width: 100vw;
     }
-    
+
     .header{
         height: 15vh;
         padding: 1em;
@@ -206,12 +220,31 @@ body{
         width: 100vw;
         justify-content: space-around;  
     }
+
+    .head-1{
+        display: none;
+    }
+
+    .lep2{
+        position: absolute;
+        width: 44.5vw;
+        bottom: -90vh;
+        right: 3vw;
+    }
 }
 
 @media all and (max-width: 1000px){
     .main-1{
         background: url(../img/1_mobile.jpg) 50% 15% no-repeat #9A1212;
         background-size: contain;
+    }
+
+    .lep1{
+        display: none;
+    }
+
+    .lep2{
+        display: none;
     }
 
     .new{
@@ -244,7 +277,7 @@ body{
     }
 
     .main-1 > .main{
-        height: 200vh;
+        height: 140vh;
         justify-content: center;
         text-align: center;
         padding-right: 0;
@@ -267,7 +300,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 100vh;
+        padding-top: 75vh;
     }
 
     .about{
@@ -301,7 +334,7 @@ body{
 
 @media all and (max-width: 800px){
     .flex-container{
-        padding-top: 65vh;
+        padding-top: 70vh;
     }
 
     .new{
@@ -337,7 +370,7 @@ body{
     }
 
     .main-1 > .main{
-        height: 100vh;
+        height: 110vh;
         justify-content: center;
         text-align: center;
         padding-right: 0;
@@ -396,7 +429,7 @@ body{
 
 @media all and (max-width: 425px){
     .main-1{
-        background-position: 50% 20%;
+        background-position: 50% 25%;
     }
 
     .new{
@@ -460,5 +493,15 @@ body{
         font-size: 2em;
         margin-top: 1em;
         text-decoration: none;
+    }
+
+    .address{
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.2em;
+        text-align: start;
+        padding-left: 0.5em;
     }
 }
