@@ -1,0 +1,301 @@
+body{
+    display: flex;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+a.badge{
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header a.badge {
+    margin-right: 1em;
+    font-size: 1.5em;
+    background: #F3F3F3;
+}
+
+.logo{
+    width: 6vw;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+header{
+    font-family: 'Jost', sans-serif;
+    height: 10vh;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    background: #F3F3F3;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-back{
+    margin-left: 1em;
+    width: 7vw;
+    border-radius: 2rem!important;
+    background: white;
+    color: #9A1212;
+}
+
+.main-1{
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    justify-content: center;
+}
+
+.main-1 > .start{
+    font-size: 4em;
+}
+
+.about-text{
+    text-align: right;
+    padding: 1.5vw;
+}
+
+.main-1 > .about{
+    display: flex;
+    width: 65vw;
+    font-family: 'Jost', sans-serif;
+    border-radius: 3rem!important;
+    background: #9A1212;
+    font-size: 2.5em;
+    color: white;
+    align-items: center;
+}
+
+.tomat {
+    border-radius: 3rem!important;
+    width: 15vw;
+}
+
+.lep{
+    position: absolute;
+    right: 2vw;
+    bottom: 2vw;
+}
+
+@media all and (max-width: 1400px){
+    header{
+        height: 15vh;
+        padding: 1em;
+        /* padding-right: 3em; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header .badge {
+        margin-right: 1em;
+        font-size: 1.7em;
+        text-decoration: none;
+    }
+
+    .logo{
+        width: 8vw;
+    }
+
+    .main-1{
+        min-height: 70vh;
+    }
+
+    .main-1 > .start{
+        font-size: 3.5em;
+    }
+
+    .main-1 > .about{
+        width: 75vw;
+        font-size: 2em;
+    }
+
+    .tomat {
+        width: 20vw;
+    }
+
+    .arrow-back{
+        width: 10vw;
+    }
+}
+
+@media all and (max-width: 1024px){
+    header{
+        height: 10vh;
+        padding: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .badge {
+        font-size: 1.7em;
+        text-decoration: none;
+    }
+
+    .logo{
+        width: 10vw;
+    }
+
+    .main-1{
+        min-height: 80vh;
+    }
+
+    .main-1 > .start{
+        font-size: 3.2em;
+    }
+
+    .main-1 > .about{
+        width: 75vw;
+        font-size: 1.5em;
+    }
+
+    .tomat {
+        width: 30vw;
+    }
+
+    .arrow-back{
+        width: 15vw;
+    }
+}
+
+@media all and (max-width: 750px){
+    header{
+        height: 35vh;
+        /* padding: 0em; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .badge {
+        margin-bottom: 0.5em;
+        font-size: 1.3em;
+        text-decoration: none;
+    }
+
+    .logo{
+        width: 15vw;
+        padding-bottom: 1vh;
+    }
+
+    .main-1{
+        display: flex;
+        min-height: 55vh;
+        justify-content: flex-start;
+    }
+
+    .main-1 > .start{
+        font-size: 2.5em;
+    }
+
+    .main-1 > .about{
+        width: 80vw;
+        font-size: 1.2em;
+    }
+
+    .tomat {
+        width: 25vw;
+    }
+
+    .arrow-back{
+        margin-left: 1em;
+        width: 18vw;
+    }
+}
+
+@media all and (max-width: 530px){
+    .about-text{
+        text-align: center;
+        padding: 2vw;
+    }
+
+    .main-1 > .about{
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tomat {
+        width: 90vw;
+    }
+
+    .main-1{
+        padding-bottom: 5vh;
+    }
+
+    .arrow-back{
+        margin-left: .8em;
+        width: 25vw;
+    }
+}
+
+@media all and (max-width: 425px){
+    .logo{
+        width: 25vw;
+        padding-bottom: 3vh;
+    }
+
+    header{
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .badge {
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+
+    .main-1{
+        display: flex;
+        min-height: 50vh;
+        justify-content: flex-start;
+        padding-bottom: 3vh;
+    }
+
+    .main-1 > .start{
+        font-size: 1.5em;
+    }
+
+    .main-1 > .about{
+        width: 90vw;
+        font-size: 0.8em;
+    }
+
+    .about-text{
+        padding: 3vw;
+    }
+
+    footer{
+        height: 10vh;
+    }
+
+    .arrow-back{
+        margin-left: .8em;
+        width: 35vw;
+    }
+}
