@@ -1,6 +1,7 @@
 body{
     font-family: 'Jost', sans-serif;
     text-align: center;
+    text-decoration: none;
 }
 
 .logo{
@@ -28,33 +29,30 @@ header a.badge {
 }
 
 header a.active {
-    /* margin-right: 1em; */
+    margin-right: 1em;
     font-size: 2.5em;
     background: #9A1212;
 }
 
 .main{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Jost', sans-serif;
     min-height: 80vh;
-    font-size: 2.2em;
-    text-align: end;
-    align-items: center;
+    display: flex;
     justify-content: center;
 }
 
-.part1{
-    width: 80vw;
+.carousel{
+    width: 75vw;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
 }
 
-.part2{
-    display: flex;
-    width: 80vw;
+img {
+    width: 12vw;
+}
+
+.arrow{
+    color: #9A1212;
 }
 
 footer{
@@ -65,7 +63,6 @@ footer{
     align-items: center;
     justify-content: space-between;
     color: #9A1212;
-    flex-direction: row;
 }
 
 .arrow-back{
@@ -82,6 +79,12 @@ footer{
     padding-right: 1em;
 }
 
+.lep{
+    position: absolute;
+    left: 0vw;
+    bottom: 15vh;
+}
+
 @media all and (max-width: 1100px){
     header{
         height: 15vh;
@@ -92,8 +95,23 @@ footer{
     }
 
     .main{
-        font-size: 1.8em;
         min-height: 75vh;
+    }
+
+    .carousel{
+        width: 90vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 25vw;
+    }
+
+    .lep{
+        bottom: 12vh;
     }
 }
 
@@ -118,36 +136,34 @@ footer{
 
     header a.badge {
         margin-bottom: 0.5em;
-        font-size: 2em;
+        font-size: 1.5em;
         margin-right: 0;
     }
 
     header a.active {
         font-size: 2.5em;
         background: #9A1212;
-    }
-
-    img.about-logo {
-        padding-bottom: 3vh;
-    }
+    }    
 
     .main{
         min-height: 55vh;
-        font-size: 1.7em;
-        text-align: justify;
-        align-items: center;
-        justify-content: center;
+        padding-bottom: 3vh;
+    }
+
+    .carousel{
+        width: 50vw;
         display: flex;
-        padding-bottom: 2vh;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
-    .part1{
-        width: 85vw;
-        flex-direction: column;
+    img {
+        width: 50vw;
     }
 
-    .part2{
-        width: 85vw;
+    .main .arrow{
+        display: none;
     }
 
     footer{
@@ -166,6 +182,10 @@ footer{
         font-size: 1.3em;
         /* padding-right: 0.5em; */
         text-align: center;
+    }
+
+    .lep{
+        display: none;
     }
 }
 
@@ -190,35 +210,28 @@ footer{
 
     header a.badge {
         margin-bottom: 0.5em;
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     header a.active {
-        font-size: 2em;
+        font-size: 1em;
         background: #9A1212;
     }
 
-    .main{
-        min-height: 55vh;
-        font-size: 1.5em;
-        text-align: justify;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        padding-bottom: 2vh;
-    }
-
-    .part1{
+    .carousel{
         width: 80vw;
-        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
-    .part2{
+    img {
         width: 80vw;
     }
 
     footer{
-        height: 15vh;
+        height: 20vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
