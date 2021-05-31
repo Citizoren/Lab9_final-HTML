@@ -1,0 +1,271 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "nav header header header header ads"
+        "nav pic pic main1 main1 ads"
+        "dkp dkp dkp dkp dkp dkp"
+        "nav2 main2 main2 main2 ads2 ads2"
+        "footer footer footer footer footer footer";
+    grid-template-rows: 10vh 90vh 4vh 70vh 10vh;
+    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+    height: 180vh;
+    margin: 0;
+}
+
+header, #main-1, #mainPic, #mainNav, #siteAds{
+    background: #9A1212;
+}
+
+header, div, footer{
+    padding: 10px;
+}
+
+#pageHeader {
+    grid-area: header;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .badge {
+    font-family: 'Jost', sans-serif;
+    margin-right: 1em;
+    font-size: 1.7em;
+    text-decoration: none;
+    display: flex;
+}
+
+.lep1{
+    position: absolute;
+    width: 30vw;
+    right: 25vw;
+    bottom: 0vw;
+}
+
+.lep2{
+    position: absolute;
+    width: 50vw;
+    bottom: -84vh;
+    right: 10vw;
+}
+
+#main-1 {
+    font-family: 'Jost', sans-serif;
+    grid-area: main1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    justify-content: center;
+}
+
+.text1{
+    font-size: 5em;
+}
+
+.text2{
+    font-size: 7.5em;
+}
+
+.text_about{
+    font-size: 1.5em;
+}
+
+#main-1 .badge{
+    font-size: 1.7em;
+    margin-top: 3em;
+    text-decoration: none;
+}
+
+#mainPic {
+    grid-area: pic;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+img.main-pic {
+    position: relative;
+    width: 45vw;
+}
+
+.dkp{
+    grid-area: dkp;
+    background: #F3F3F3;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.dkp-text{
+    font-family: 'Jost', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#mainNav { 
+    grid-area: nav; 
+}
+
+#Nav2 {
+    grid-area: nav2;
+}
+
+#main-2 {
+    grid-area: main2;
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.new{
+    font-size: 7.5em;
+}
+
+.carousel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65vw;
+}
+
+.arrow{
+    color: #9A1212;
+}
+
+.figure-img{
+    border-radius: 3rem!important;
+}
+
+.figure-caption{
+    color: #9A1212!important;
+    font-size: 2.2em!important;
+}
+
+#siteAds { 
+    grid-area: ads; 
+}
+
+#Ads2 {
+    grid-area: ads2;
+}
+
+#pageFooter {
+    grid-area: footer;
+    background: #F3F3F3;
+    display: flex;
+    align-items: center;
+}
+
+
+.address{
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5em;
+}
+
+@media all and (max-width: 1280px) {
+    .text1{
+        font-size: 3.5em;
+    }
+
+    .text2{
+        font-size: 6em;
+    }
+
+    .text_about{
+        font-size: 1.2em;
+    }
+
+    .new{
+        font-size: 5em;
+    }
+
+    .figure-caption{
+        color: #9A1212!important;
+        font-size: 1.5em!important;
+    }
+}
+
+@media all and (max-width: 900px) {
+    #main-2{
+        grid-column-end: 6;
+    }
+
+    .carousel{
+        width: 90vw;
+    }
+
+    .lep2{
+        display: none;
+    }
+
+    .text1{
+        font-size: 3em;
+    }
+
+    .text2{
+        font-size: 4.5em;
+    }
+
+    .new{
+        font-size: 4.5em;
+    }
+}
+
+@media all and (max-width: 800px) {
+    #pageHeader{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .badge {
+        display: flex;  
+        margin-right: 0;
+        font-size: 1.5em;
+    }
+
+    #main-1 .badge{
+        font-size: 1.3em;
+        margin-top: 1em;
+        text-decoration: none;
+    }
+
+    #main-1{
+        display: flex;
+    }
+
+    #main-2{
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    .carousel{
+        width: 95vw;
+    }
+
+    .lep1{
+        display: none;
+    }
+
+    .text1{
+        font-size: 3em;
+    }
+
+    .text2{
+        font-size: 4em;
+    }
+
+    .new{
+        font-size: 4em;
+    }
+}

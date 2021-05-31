@@ -1,0 +1,284 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+        "nav header ads"
+        "nav article ads"
+        "footer footer footer";
+    grid-template-rows: 10vh 1fr 10vh;
+    grid-template-columns: 10vw 1fr 10vw;
+    height: 100vh;
+    margin: 0;
+}
+
+header, footer {
+    padding: 20px;
+}
+
+#pageHeader {
+    grid-area: header;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .badge {
+    font-family: 'Jost', sans-serif;
+    margin-right: 1em;
+    font-size: 1.7em;
+    text-decoration: none;
+    display: flex;
+}
+
+header a.active {
+    font-size: 2.5em;
+    background: #9A1212;
+}
+
+.logo{
+    width: 6vw;
+}
+
+.buttons{
+    display: flex;
+    align-content: center;
+    align-items: flex-start;
+}
+
+#pageFooter {
+    grid-area: footer;
+    font-family: 'Jost', sans-serif;
+    background: #F3F3F3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #9A1212;
+    flex-direction: row;
+}
+
+.arrow-back{
+    width: 7vw;
+    border-radius: 2rem!important;
+    background: white;
+    color: #9A1212;
+    display: flex;
+    justify-content: center;
+}
+
+a.button-back{
+    text-decoration: none;
+}
+
+.address{
+    font-size: 1.5em;
+    text-align: end;
+}
+
+#mainArticle { 
+    grid-area: article;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jost', sans-serif;
+    font-size: 2.2em;
+    text-align: end;
+    align-items: center;
+    justify-content: center;
+}
+
+.part1{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.part2{
+    display: flex;
+    width: 80vw;
+}
+
+#mainNav { 
+    grid-area: nav;
+}
+
+#siteAds { 
+    grid-area: ads; 
+}
+
+@media all and (max-width: 1400px) {
+    #mainArticle {
+        font-size: 1.8em;
+        min-height: 75vh;
+    }
+}
+
+@media all and (max-width: 1024px){
+    #pageHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .badge {
+        font-size: 1.5em;
+    }
+
+    .buttons{
+        display: flex;
+        align-items: center;
+    }
+
+    .logo{
+        width: 10vw;
+    }
+
+    .arrow-back{
+        width: 15vw;
+    }
+
+    .address{
+        font-size: 1.5em;
+    }
+}
+
+@media all and (max-width: 750px){
+    body { 
+        display: grid;
+        grid-template-areas: 
+            "header header header"
+            "nav article ads"
+            "footer footer footer";
+        grid-template-rows: 20vh 1fr 10vh;
+        grid-template-columns: 10vw 1fr 10vw;
+        height: 100vh;
+        margin: 0;
+    }
+
+    #pageHeader{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .badge {
+        margin-bottom: 0.5em;
+        font-size: 1.3em;
+    }
+
+    header a.active {
+        font-size: 2.2em;
+        background: #9A1212;
+    }
+
+    .logo{
+        width: 15vw;
+        padding-bottom: 1vh;
+    }
+
+    img.about-logo {
+        padding-bottom: 3vh;
+    }
+
+    #mainArticle{
+        font-size: 1.4em;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-bottom: 2vh;
+    }
+
+    .part1{
+        flex-direction: column;
+    }
+
+    .arrow-back{
+        margin-left: 1em;
+        width: 20vw;
+    }
+
+    .address{
+        font-size: 1.2em;
+    }
+}
+
+@media all and (max-width: 530px){
+    .arrow-back{
+        margin-left: .8em;
+        width: 25vw;
+    }
+
+    header a.active {
+        font-size: 2em;
+        background: #9A1212;
+    }
+
+    #mainArticle {
+        font-size: 1.4em;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-bottom: 2vh;
+    }
+
+    img.about-logo {
+        width: 25vw;
+    }
+
+    .part1{
+        flex-direction: column;
+    }
+
+    .address{
+        font-size: 1.1em;
+    }
+}
+
+@media all and (max-width: 425px){
+    .logo{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pageHeader{
+        display: flex;
+        justify-content: center;
+    }
+
+    header .badge {
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+
+    #mainArticle {
+        font-size: 1.2em;
+    }
+
+    .arrow-back{
+        margin-left: .8em;
+        width: 15vw;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .address{
+        font-size: 1em;
+    }
+}
